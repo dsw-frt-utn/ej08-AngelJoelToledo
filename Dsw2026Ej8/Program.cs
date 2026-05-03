@@ -17,6 +17,11 @@ namespace Dsw2026Ej8
             Problema3 compara = new Problema3();
             string comparacion = compara.CompararCopias(originalValue: 1, product: new Product { descripcion = "Producto original" });
             Console.WriteLine(comparacion);
+
+            Problema4 notas = new Problema4();
+            double promedio = notas.CalcularPromedio(nota1: 6, nota2: 10, nota3: 3);
+            Console.WriteLine($"Promedio: {promedio:F2}");
+            //promedio:F2 Muestra el promedio con 2 decimales
         }
     }
 }
