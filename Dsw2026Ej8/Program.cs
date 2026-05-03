@@ -7,10 +7,12 @@ namespace Dsw2026Ej8
         static void Main(string[] args)
         {
             ProductHelper helper = new ProductHelper();
-
             string etiqueta = helper.ObtenerEtiquetaProducto(code: 1001,  description: "Laptop", price: 1599.99m);
-
             Console.WriteLine(etiqueta);
+
+            Problema2 resumen = new Problema2();
+            string resumenVenta = resumen.CrearResumenVenta(productCode: 1100, productDescription: "Celular", quantity: 2, unitPrice: 1299.99m);
+            Console.WriteLine(resumenVenta);    
         }
     }
 }
