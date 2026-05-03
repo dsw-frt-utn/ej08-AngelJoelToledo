@@ -28,7 +28,11 @@ namespace Dsw2026Ej8
             WholesaleSale compraWholesale = new WholesaleSale { total =  100 };
             Console.WriteLine($"Importe final retail: {compra.ObtenerImporteFinal(compraRetail):F2}");
             Console.WriteLine($"Importe final wholesale: {compra.ObtenerImporteFinal(compraWholesale):F2}");
-            
+
+            Problema6 codigo = new Problema6();
+            string codigoNormalizado = codigo.NormalizarCodigoProducto(code: "  ab0 123 x ");
+            Console.WriteLine(codigoNormalizado);
+
 
         }
     }
